@@ -1,0 +1,47 @@
+{
+	"name": "bitburner-bridge",
+	"version": "0.1.0",
+	"description": "A two-way file synchronization bridge for the game Bitburner.",
+	"keywords": [
+		"bitburner"
+	],
+	"homepage": "https://github.com/mwoodruff/bitburner-bridge#readme",
+	"bugs": {
+		"url": "https://github.com/mwoodruff/bitburner-bridge/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/mwoodruff/bitburner-bridge.git"
+	},
+	"license": "Unlicense",
+	"author": "mwoodruff",
+	"type": "module",
+	"bin": {
+		"bitburner-bridge": "dist/bin.js"
+	},
+	"files": [
+		"dist",
+		"README.md",
+		"LICENSE"
+	],
+	"scripts": {
+		"pretty": "prettier --write 'src/**/*.{js,ts}'",
+		"lint": "eslint --ext .js,.ts src",
+		"build": "tsc"
+	},
+	"dependencies": {
+		"chalk": "^5.4.1",
+		"commander": "^13.1.0",
+		"ws": "^8.18.1"
+	},
+	"devDependencies": {
+		"@eslint/js": "^9.25.1",
+		"@types/node": "^22.15.2",
+		"@types/ws": "^8.18.1",
+		"eslint": "^9.25.1",
+		"globals": "^16.0.0",
+		"prettier": "^3.5.3",
+		"typescript": "^5.8.3",
+		"typescript-eslint": "^8.31.0"
+	}
+}
